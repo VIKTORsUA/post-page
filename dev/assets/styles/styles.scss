@@ -1,0 +1,108 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+html {
+  font-size: 75%;
+  min-height: 100vh;
+
+  @include media($sm){
+    font-size: 85%;
+  }
+
+  @include media($md){
+    font-size: 90%;
+  }
+
+  @include media($lg){
+    font-size: 100%;
+  }
+}
+
+body {
+  font-size: $base-font-size;
+  line-height: 1.5em;
+  color: $base-font-color;
+  font-family: 'Stag', sans-serif;
+  font-weight: normal;
+  min-height: 100vh;
+  background-color: $black;
+  position: relative;
+
+  @include browser($msie){
+    line-height: 1.47em;
+  }
+
+  @include browser($firefox){
+    line-height: 1.46em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; }
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a { text-decoration: none; }
+
+p { margin: 0; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video,
+textarea {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+textarea { resize: none; }
+
+section { position: relative; }
+
+input,
+select,
+button { outline: none; }
+button { cursor: pointer; }
+
+*, *:before, *:after { box-sizing: border-box; }
+
+
+//#pixel-perfect {
+//  display: none;
+//  position: absolute;
+//  z-index: 0;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  margin: auto;
+//  opacity: 1;
+//  @include media($xl){
+//    display: block;
+//  }
+//}
+//
+//body .wrapper {
+//  @include media($xl){
+//    opacity: 0.6;
+//  }
+//}
+.pixel-perfect {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 0.6;
+}
+
+
+//Модули
+@import "modules/modules";

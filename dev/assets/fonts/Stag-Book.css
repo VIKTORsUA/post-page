@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Stag-Book';
+  src: url('Stag-Book.eot');
+  src: url('Stag-Book.eot?#iefix') format('embedded-opentype'),
+       url('Stag-Book.svg#Stag-Book') format('svg'),
+       url('Stag-Book.ttf') format('truetype'),
+       url('Stag-Book.woff') format('woff'),
+       url('Stag-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

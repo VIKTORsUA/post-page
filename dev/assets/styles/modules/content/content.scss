@@ -1,0 +1,61 @@
+.content {
+  position: relative;
+  background: $white;
+  max-width: 940px;
+  margin: auto;
+  padding: 0 2.5rem 1.5rem 2.5rem;
+
+  @include media($lg) {
+    margin: -5rem auto auto auto;
+    padding: 0 5rem 3.125rem 5rem;
+  }
+
+  &__title {
+    padding-top: 1.33em;
+    .title__icon {
+      width: 2.5rem;
+      margin-left: -2.5rem;
+      margin-right: 0;
+
+      @include media($lg) {
+        width: 5rem;
+        margin-left: -5rem;
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 0.3rem;
+    p {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  &__img {
+    border: 5px solid #f2f2f2;
+    margin: 0 1.2em;
+    &-left {
+      float: left;
+      margin-left: -2.5rem;
+      margin-right: 1.2em;
+      border: solid #f2f2f2;
+      border-width: 5px 5px 5px 0;
+
+      @include media($lg) {
+        margin-left: -5rem;
+      }
+    }
+    &-right {
+      float: right;
+      margin-right: -2.5rem;
+      margin-left: 1.2em;
+      border: solid #f2f2f2;
+      border-width: 5px 5px 0 5px;
+
+      @include media($lg) {
+        margin-right: -5rem;
+      }
+    }
+  }
+
+}

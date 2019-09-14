@@ -1,0 +1,49 @@
+// Media quiries
+//
+// @param {Number|Keyword} $value - breakpoint value
+// @param {Keyword} $direction [min] - "direction" of media quiries
+@mixin media($value, $direction: min) {
+  $corrector: 1;
+  @if $direction == max {
+    $corrector: 0;
+  }
+
+  @if type-of($value == string) and map-has-key($breakpoints, $value) {
+    @media only screen and (#{$direction}-width: map-get($breakpoints, $value) + $corrector) {
+      @content;
+    }
+  } @else {
+    @media only screen and (#{$direction}-width: $value + $corrector) {
+      @content;
+    }
+  }
+}
+
+// Browsers
+//
+// @param {Keyword} $browser - HTML class defining browser
+@mixin browser($browsers...) {
+  @each $browser in $browsers {
+    #{$browser} & {
+      @content;
+    }
+  }
+}
+
+// Placeholder
+//
+// @param {Keyword} $browser - CSS property
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content
+  }
+  &:-moz-placeholder {
+    @content
+  }
+  &::-moz-placeholder {
+    @content
+  }
+  &:-ms-input-placeholder {
+    @content
+  }
+}

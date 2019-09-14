@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Stag-Semibold';
+  src: url('Stag-Semibold.eot');
+  src: url('Stag-Semibold.eot?#iefix') format('embedded-opentype'),
+       url('Stag-Semibold.svg#Stag-Semibold') format('svg'),
+       url('Stag-Semibold.ttf') format('truetype'),
+       url('Stag-Semibold.woff') format('woff'),
+       url('Stag-Semibold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

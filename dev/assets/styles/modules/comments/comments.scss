@@ -1,0 +1,132 @@
+.comments {
+  &__title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 3.1em;
+
+    @include browser($msie, $firefox) {
+      line-height: 3.2em;
+    }
+  }
+
+  &__list {
+    margin-bottom: 2.5rem;
+
+    &-children {
+      padding: 1.9rem 0 0 0;
+
+      @include media($md, 'max'){
+        margin-left: -4rem;
+      }
+
+      .comment {
+        margin-bottom: 1.875rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &__avatar-wrap {
+          width: 4.25rem;
+          height: 4.25rem;
+        }
+      }
+    }
+  }
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__avatar {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+    &-wrap {
+      flex-shrink: 0;
+      width: 5.5rem;
+      height: 5.5rem;
+      border: 2px solid #ebedee;
+      border-radius: 5px;
+      padding: 2px;
+      margin-right: 1.4rem;
+    }
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__text {
+    padding: 0.5em 0;
+  }
+
+  &__control {
+    padding-bottom: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include media($sm){
+      display: block;
+    }
+
+    .btn__transparent {
+      @include media($md, 'max'){
+        padding: 0.5em 0;
+      }
+    }
+  }
+
+  &__form {
+    flex-grow: 1;
+    &-wrap {
+      display: flex;
+      padding: 0.5rem 0 0.6rem 0;
+      border-bottom: 2px solid #f2f2f2;
+      margin-bottom: 2.5rem;
+    }
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.1rem 0 0.8rem 0;
+    }
+    &-bottom {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 0.7rem;
+    }
+    &-textarea {
+      display: block;
+      border: 2px solid #ebedee;
+      border-radius: 5px;
+      padding: 0.5em 0.8em;
+      width: 100%;
+      min-height: 5.5rem;
+      resize: vertical;
+      line-height: 1.5em;
+
+      @include browser($msie) {
+        line-height: 1.47em;
+      }
+
+      @include browser($firefox) {
+        line-height: 1.46em;
+      }
+
+      @include placeholder {
+        color: #bfbfbf;
+      }
+    }
+
+    + .comments__list-children {
+      padding-top: 1.25rem;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Stag';
+  src: url('../fonts/Stag-Book.svg#Stag-Book') format('svg'),
+  url('../fonts/Stag-Book.ttf') format('truetype'),
+  url('../fonts/Stag-Book.woff') format('woff'),
+  url('../fonts/Stag-Book.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stag';
+  src: url('../fonts/Stag-Medium.svg#Stag-Medium') format('svg'),
+  url('../fonts/Stag-Medium.ttf') format('truetype'),
+  url('../fonts/Stag-Medium.woff') format('woff'),
+  url('../fonts/Stag-Medium.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stag';
+  src: url('../fonts/Stag-Semibold.woff2') format('woff2'),
+  url('../fonts/Stag-Semibold.woff') format('woff'),
+  url('../fonts/Stag-Semibold.ttf') format('truetype'),
+  url('../fonts/Stag-Semibold.svg#Stag-Semibold') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+
+//.Stag-Book {
+//  font-family: 'Stag', sans-serif;
+//  font-weight: normal;
+//}
+//
+//.Stag-Medium {
+//  font-family: 'Stag', sans-serif;
+//  font-weight: 700;
+//}
+//
+//.Stag-Semibold {
+//  font-family: 'Stag', sans-serif;
+//  font-weight: 900;
+//}

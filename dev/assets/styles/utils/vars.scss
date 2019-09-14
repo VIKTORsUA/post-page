@@ -1,0 +1,30 @@
+// Colors
+$white: #ffffff;
+$black: #000000;
+$base-font-color: #454545;
+
+// Sizes
+$base-font-size: 1.0625rem;
+
+// Breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 939px;
+$xl: 1200px;
+
+/// Breakpoints map
+$breakpoints: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl
+);
+
+// Browsers
+$chrome: '.chrome';
+$safari: '.safari';
+$msie: '.msie';
+$opera: '.opera';
+$firefox: '.firefox';
+
+// Fonts

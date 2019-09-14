@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Stag-Medium';
+  src: url('Stag-Medium.eot');
+  src: url('Stag-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Stag-Medium.svg#Stag-Medium') format('svg'),
+       url('Stag-Medium.ttf') format('truetype'),
+       url('Stag-Medium.woff') format('woff'),
+       url('Stag-Medium.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

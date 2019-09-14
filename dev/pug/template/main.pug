@@ -1,0 +1,28 @@
+include ../utils/mixins
+block variables
+
+doctype html
+html#html(lang="en")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		<!--[if IE]>
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		<![endif]-->
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		link(rel="stylesheet" type='text/css' href="assets/css/styles.min.css")
+		link(rel="shortcut icon" type="image/x-icon" href="assets/images/general/favicon.ico")
+
+		script
+			include ../../assets/js/inline.js
+	body(class=pageClass)
+		img.pixel-perfect(style='display: none' src='assets/images/general/PP.png' alt='PP')
+		img.pixel-perfect(style='display: none' src='assets/images/general/PP-2.png' alt='PP')
+		.wrapper
+			include ../modules/header/header
+			.content
+				block content
+			include ../modules/footer/footer
+		script(src="assets/js/main.js")
+		block script
