@@ -40,7 +40,7 @@
     "gulp-uglify": "^3.0.1",
     "imagemin-jpeg-recompress": "^6.0.0",
     "imagemin-pngquant": "^6.0.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "rollup": "^1.21.2",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
